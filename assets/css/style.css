@@ -57,7 +57,7 @@ button, input[type=submit], input[type=reset] {
 }
 
 button:hover, input[type="submit"]:hover, input[type=reset]:hover {
-opacity: 0.7;
+    opacity: 0.7;
 }
 
 header {
@@ -130,6 +130,7 @@ nav a {
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 2s ease, opacity 2s ease;
 }
 
 nav a:link,
@@ -140,6 +141,7 @@ nav a:visited {
 nav a:hover {
     opacity: 0.8;
     text-decoration: none;
+    background-color: #FFAA33;
 }
 
 caption {
