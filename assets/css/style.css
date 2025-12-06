@@ -144,6 +144,7 @@ nav a:hover {
     opacity: 0.8;
     text-decoration: none;
     background-color: #FFAA33;
+    transform: scale(1.1);
 }
 
 caption {
