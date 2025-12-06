@@ -54,10 +54,12 @@ button, input[type=submit], input[type=reset] {
     border-radius: 5px;
     padding: 0.5em 1em;
     cursor: pointer;
+    transition: background-color 2s ease, opacity 2s ease;
 }
 
 button:hover, input[type="submit"]:hover, input[type=reset]:hover {
     opacity: 0.7;
+    background-color: #FFAA33;
 }
 
 header {
