@@ -237,6 +237,16 @@ aside {
     min-width: 200px;
 }
 
+img:not([alt]) {
+    border: 3px solid red;
+}
+
+a[href$=".pdf"]::after {
+    content: url('https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png');
+    display: inline-block;
+    margin-left: 5px;
+}
+
 @media (max-width:699px) {
     main section {
         flex-direction: column;
@@ -274,4 +284,6 @@ aside {
         flex: 1 1 25%;
     }
 }
+
+
 
