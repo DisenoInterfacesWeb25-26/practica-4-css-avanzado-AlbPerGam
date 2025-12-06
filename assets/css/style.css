@@ -1,0 +1,276 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 1em;
+    color: var(--negro);
+    background-color: var(--blanco);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--verde-oscuro);
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--verde-medio)
+}
+
+h3 {
+    font-size: 1.2em;
+    color: var(--negro);
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+:root {
+    --verde-oscuro: #388E3C; /*color principal*/
+    --verde-medio: #84BD88; /*color secundario*/
+    --naranja: #FF7700; /*color enlaces y botones*/
+    --negro: #212121; /*color texto*/
+    --blanco: #FFFFFF; /*color fondo*/
+}
+
+a {
+    color: var(--naranja);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button, input[type=submit], input[type=reset] {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover, input[type=reset]:hover {
+opacity: 0.7;
+}
+
+header {
+    background-color: var(--blanco);
+    color: var(--verde-oscuro);
+    text-align: center;
+    padding-top: 60px;
+}
+
+nav {
+    background-color: var(--verde-medio);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1em;
+}
+
+aside {
+    background-color: #f5f5f5;
+    color: var(--negro);
+}
+
+form {
+    background-color: var(--blanco);
+    color: var(--negro);
+    border: 1px solid var(--verde-medio);
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: var(--blanco);
+    color: var(--negro);
+    border: 1px solid var(--verde-medio);
+    width: 100%;
+    text-align: center;
+    table-layout: auto;
+    margin: 20px 0;
+}
+
+td {
+    border: 1px solid var(--verde-medio);
+    padding: 0.5em
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0.5em 1em;
+    background-color: var(--naranja);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--blanco);
+}
+
+nav a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+caption {
+    caption-side: bottom;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--negro);
+    font-size: 1em;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+table thead tr:first-child {
+    background-color: var(--verde-medio);
+    color: var(--blanco);
+}
+
+table tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--blanco);
+}
+
+ a:link {
+    color: var(--naranja);
+    text-decoration: none;
+}
+
+
+nav a:visited {
+    color: #7f00ff;
+}
+
+nav a:active {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+}
+
+aside a:visited {
+    color: #7f00ff;
+}
+
+aside a:hover {
+    color: var(--naranja);
+    text-decoration: underline;
+}
+
+aside a:active {
+    color: var(--verde-medio);
+}
+
+footer a:visited {
+    color: #7f00ff;
+}
+
+footer a:hover {
+    color: var(--naranja);
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: var(--verde-medio);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    border: 1px solid var(--verde-medio);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    flex: 2 1 60%;
+    min-width: 250px;
+}
+
+aside {
+    flex: 1 1 35%;
+    min-width: 200px;
+}
+
+@media (max-width:699px) {
+    main section {
+        flex-direction: column;
+    }
+
+    article, aside {
+        flex: 1 1 100%;
+    }
+}
+
+@media (min-width:700px) and (max-width:1199px) {
+    main section {
+        flex-direction: row;
+    }
+
+    article {
+        flex: 2 1 60%;
+    }
+
+    aside {
+        flex: 1 1 35%;
+    }
+}
+
+@media (min-width:1200px) {
+    main section {
+        flex-direction: row;
+    }
+
+    article {
+        flex: 2 1 70%;
+    }
+
+    aside {
+        flex: 1 1 25%;
+    }
+}
+
